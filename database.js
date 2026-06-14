@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-const { Pool } = require('pg');
+const { Pool } = require('@neondatabase/serverless');
 const path = require('path');
 
 const isPostgres = process.env.DATABASE_URL && (process.env.DATABASE_URL.startsWith('postgres://') || process.env.DATABASE_URL.startsWith('postgresql://'));
